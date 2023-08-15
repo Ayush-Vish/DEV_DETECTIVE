@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class=" h-screen m-0 p-0 box-border w-[100%] bg-white flex justify-center items-center bg-[url('')] " >
+    <div class="w-[80%] p-5 flex justify-center items-center flex-col bg-[#484848]">
+        <header class="flex justify-around  w-[90%] pb-3"  >
+            <div class="font-extrabold">Developer dhundo</div>
+            <div><button class="flex ">
+                <p>
+                    Dark
+                </p>
+                <img src="../night-mode.png" alt="" class="w-7 " >
+            </button></div>
+        </header>
+        <nav class="rounded-md ml-5 mr-5  bg-[#ffb5b5] w-[100%] flex justify-evenly items-center p-5 " >
+            <input onsubmit="false" id="input-username" type="text" placeholder="Enter DEV Name" class="bg-inherit placeholder-white font-mono  text-white outline-none " autofocus checked >
+            <button id="search-btn" class="bg-blue-600 p-3 rounded-xl text-white hover:bg-blue-950 ">
+                Search
+            </button>
+        </nav>
+        <main class="m-9 flex justify-center items-center flex-col rounded-md bg-slate-400 w-[100%]" >
+
+            <!-- Hero sEction -->
+            <div class="hero flex flex-col sm:flex-row justify-around items-center w-[100%] bg-red-200 ">
+                <div class="image-username  flex justify-around items-center " >
+                    <div class="flex sm:flex-row flex-col justify-end items-center p-4" >
+                        <img src="../night-mode.png" width="100px" alt="" id="userImage">
+                        <div class="m-2 p-2 flex justify-around items-center flex-col">
+                            <h2 id="username">
+                                Ayush Vishwakarma
+                            </h2>
+                            <a id="userId" href=""><p id="login" class="font-semibold underline " >Ayush-Vish</p> </a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="date" id="">
+                    <p id="dateJoined">00-00-0000</p>
+                </div>
+            </div>
+
+            <!-- Bio Section  -->
+            <div class="bio flex justify-center "  >
+                <p id="bio">No Bio to show</p>
+            </div>
+            <!-- info  section -->
+            <div class="info m-4 bg-yellow-[] flex flex-col sm:flex-row justify-evenly items-center w-[90%] rounded-2xl p-5 ">
+                <div class="flex justify-center items-center flex-col gap-1">
+                    <p class="">Repos</p>
+                    <span id="repos" >
+                        0
+                    </span>
+                </div>
+                <div class="flex justify-center items-center flex-col gap-1">
+                    <p class="">Followers</p>
+                    <span id="followers">
+                        0
+                    </span>
+                </div>
+                <div class="flex justify-center items-center flex-col gap-1">
+                    <p class="">Following</p>
+                    <span id="following">
+                        0
+                    </span>
+                </div>
+                
+            </div>
+            <!-- Social section -->
+            <div class="social sm:grid sm:grid-cols-2 md:gap-3  " >
+                <div>
+                    <img src="../maps-flags_447031.png" alt=" " class="w-4 "> 
+                        <p id="location">Not Available</p>
+                    </img>
+                </div>
+                <div>
+                    <img src="../link_455691.png" alt="" class="w-4">
+
+                        <a href="" id="blog">Not Available</a>
+                    </img>
+                </div>
+                <div>
+                    <img src="../linkedin-logo_61109.png" alt="" class="w-4"  >
+                        <p id="twitter">Not Available </p>
+                    </img>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4150/4150792.png" class="w-4" alt="">
+                        <p id="hireable">Not hireable</p>
+                    </img>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>
